@@ -1,5 +1,4 @@
-import Image from "next/image"
-import crashingImage from '@/assets/images/crashing-image.jpg'
+
 
 export default function CrashingCards() {
     return (
