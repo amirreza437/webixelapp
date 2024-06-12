@@ -2,7 +2,7 @@
 
 export default function CrashingCards() {
     return (
-        <div className="container mx-auto max-w-[1288px] p-10 mt-10 grid gap-y-4 my-10">
+        <div className="container mx-auto max-w-[1288px] p-10 mt-10 grid gap-y-4 mt-10">
             <div className="bg-[#ECEEF0] flex justify-center md:justify-between items-center rounded-t-3xl md:px-10 py-3 md:py-12">
                 <div className="grid gap-y-2 md:w-1/2 px-3 py-5 md:p-0">
                     <h2 className="font-black text-xl sm:text-2xl">آموزش برنامه نویسی با وبیکسل</h2>
