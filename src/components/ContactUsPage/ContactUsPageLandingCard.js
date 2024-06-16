@@ -7,10 +7,10 @@ export default function ContactUsPageLandingCard() {
         <div className="container mx-auto max-w-[1288px] sm:p-10 rounded-lg mt-20 space-y-10">
             <div className="text-center space-y-4 mb-20">
                 <h1 className="font-black text-3xl md:text-6xl">ارتباط  با <span className="text-[#FF0060]">وبیکسل</span></h1>
-                <p className="text-lg md:text-xl font-light">در این صفحه میتوانید پل های ارتباطی با وبیکسل را مشاهده کنید.</p>
+                <p className="text-base md:text-xl font-light">در این صفحه میتوانید پل های ارتباطی با وبیکسل را مشاهده کنید.</p>
             </div>
-            <div className="flex justify-center gap-x-20">
-                <div className="space-y-6">
+            <div className="grid grid-cols-1 place-items-center sm:flex sm:justify-center gap-x-20 gap-y-10">
+                <div className="space-y-2 sm:space-y-6">
                     <h2 className="text-lg md:text-xl font-semibold">پل های ارتباطی</h2>
                     <ul className="flex gap-x-4">
                         <li className="bg-[#FF0060] text-white hover:bg-[#FFE3E7] hover:text-[#FF0060] rounded duration-200 w-fit p-1">
@@ -25,8 +25,8 @@ export default function ContactUsPageLandingCard() {
                         </li>
                     </ul>
                 </div>
-                <div className="space-y-6">
-                    <h2 className="text-lg md:text-xl font-semibold">شبکه های اجتماعی</h2>
+                <div className="space-y-2 sm:space-y-6">
+                    <h2 className="text-center text-lg md:text-xl font-semibold">شبکه های اجتماعی</h2>
                     <ul className="flex gap-x-4">
                         <li className="bg-[#FF0060] text-white p-1 hover:bg-[#FFE3E7] hover:text-[#FF0060] rounded duration-200">
                             <svg id="instagram" class="h-10 w-10" viewBox="0 0 24 24" strokeWidth="1" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="4" width="16" height="16" rx="4" />  <circle cx="12" cy="12" r="3" />  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg>
