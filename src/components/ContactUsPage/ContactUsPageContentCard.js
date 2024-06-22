@@ -26,7 +26,7 @@ export default function ContactUsPageContentCard() {
                     <form className="grid grid-cols-1 place-items-center gap-y-8 mt-5">
                         <input className="bg-[#F4F5F7] w-full p-3 rounded-md focus-within:outline-[#FF0060] focus-within:font-bold" type="name" placeholder="نام خود را وارد کنید" />
                         <input className="bg-[#F4F5F7] w-full p-3 rounded-md focus-within:outline-[#FF0060] focus-within:font-bold" type="email" placeholder="ایمیل خود را وارد کنید" />
-                        <textarea className="bg-[#F4F5F7] w-full p-3 rounded-md focus-within:outline-[#FF0060] focus-within:font-bold" rows="5" placeholder="پیام خود را وارد کنید" />
+                        <textarea className="bg-[#F4F5F7] w-full p-3 rounded-md focus-within:outline-[#FF0060] focus-within:font-bold resize-none" rows="5" cols="7" placeholder="پیام خود را وارد کنید" />
                         <button className="bg-[#FF0060] text-white hover:bg-[#FFE3E7] hover:text-[#FF0060] duration-200 rounded-md px-7 py-2">ارسال پیام</button>                    
                     </form>
                 </div>    
