@@ -1,3 +1,4 @@
+import Courses from "@/components/CoursesPage/Courses";
 import CoursesSideBar from "@/components/CoursesPage/CoursesSideBar";
 
 
@@ -11,7 +12,7 @@ export default function CoursesPage() {
                     <CoursesSideBar />
                 </div>
                 <div className="col-span-12 md:col-span-9">
-
+                    <Courses />
                 </div>
             </div>
         </div>
