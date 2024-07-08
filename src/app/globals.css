@@ -113,7 +113,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ffffff !important;
+  background-color: #FF0060 !important;
   transform: scale(150%);
   padding: 0 6px 0 6px;
 }
@@ -175,3 +175,5 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+/* #0E2338 */
+/* #162F48 */

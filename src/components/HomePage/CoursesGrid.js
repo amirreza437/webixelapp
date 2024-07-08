@@ -1,28 +1,29 @@
-import RoadMapSwiper from "./RoadMapSwiper";
+import CoursesSwiper from "./CoursesSwiper";
 
 
-export default function RoadMapGrid() {
+
+export default function CoursesGrid() {
     return (
-        <div className="bg-[#FF0060]">
+        <div className="">
             <div className="mx-auto max-w-[1288px] p-10 rounded-[100px] mt-10">
                 <div className="grid grid-cols-1 place-items-center min-[700px]:flex justify-between items-center">
                     <div className="flex justify-center items-center gap-x-1 min-[700px]:gap-x-4">
-                        <h2 className="font-black text-2xl min-[700px]:text-4xl text-white">رود مپ ها</h2>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 min-[700px]:w-10 min-[700px]:h-10 text-white -order-last">
+                        <h2 className="font-black text-2xl min-[700px]:text-4xl text-slate-700 dark:text-[#EEEEEE]">دوره ها</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 min-[700px]:w-10 min-[700px]:h-10 text-slate-700 -order-last dark:text-[#EEEEEE]">
                             <path d="M20.3116 12.6473L20.8293 10.7154C21.4335 8.46034 21.7356 7.3328 21.5081 6.35703C21.3285 5.58657 20.9244 4.88668 20.347 4.34587C19.6157 3.66095 18.4881 3.35883 16.2331 2.75458C13.978 2.15033 12.8504 1.84821 11.8747 2.07573C11.1042 2.25537 10.4043 2.65945 9.86351 3.23687C9.27709 3.86298 8.97128 4.77957 8.51621 6.44561C8.43979 6.7254 8.35915 7.02633 8.27227 7.35057L8.27222 7.35077L7.75458 9.28263C7.15033 11.5377 6.84821 12.6652 7.07573 13.641C7.25537 14.4115 7.65945 15.1114 8.23687 15.6522C8.96815 16.3371 10.0957 16.6392 12.3508 17.2435L12.3508 17.2435C14.3834 17.7881 15.4999 18.0873 16.415 17.9744C16.5152 17.9621 16.6129 17.9448 16.7092 17.9223C17.4796 17.7427 18.1795 17.3386 18.7203 16.7612C19.4052 16.0299 19.7074 14.9024 20.3116 12.6473Z" fill="currentColor"/>
                             <path opacity="0.5" d="M16.4149 17.9745C16.2064 18.6128 15.8398 19.1903 15.347 19.6519C14.6157 20.3368 13.4881 20.6389 11.2331 21.2432C8.97798 21.8474 7.85044 22.1496 6.87466 21.922C6.10421 21.7424 5.40432 21.3383 4.86351 20.7609C4.17859 20.0296 3.87647 18.9021 3.27222 16.647L2.75458 14.7152C2.15033 12.4601 1.84821 11.3325 2.07573 10.3568C2.25537 9.5863 2.65945 8.88641 3.23687 8.3456C3.96815 7.66068 5.09569 7.35856 7.35077 6.75431C7.7774 6.64 8.16369 6.53649 8.51621 6.44534C8.51618 6.44545 8.51624 6.44524 8.51621 6.44534C8.43979 6.72513 8.3591 7.02657 8.27222 7.35081L7.75458 9.28266C7.15033 11.5377 6.84821 12.6653 7.07573 13.6411C7.25537 14.4115 7.65945 15.1114 8.23687 15.6522C8.96815 16.3371 10.0957 16.6393 12.3508 17.2435C14.3833 17.7881 15.4999 18.0873 16.4149 17.9745Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <a href="#" className="group flex items-center gap-x-2 text-white hover:text-[#334155] duration-200">
-                        <p className="text-base md:text-xl font-light">مشاهده همه رود مپ ها</p>
-                        <svg className="w-4 h-4 fill-current text-white group-hover:text-[#334155] duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#" className="group flex items-center gap-x-2 text-slate-700 hover:text-[#64748B] duration-200">
+                        <p className="text-base md:text-xl font-light dark:text-[#EEEEEE]">مشاهده همه دوره ها</p>
+                        <svg className="w-4 h-4 fill-current text-slate-700 group-hover:text-[#64748B] duration-200 dark:text-[#EEEEEE]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.5" d="M1 13.5289C1 8.862 1 6.52855 2.44982 5.07873C3.89964 3.62891 6.2331 3.62891 10.9 3.62891C15.5669 3.62891 17.9004 3.62891 19.3502 5.07873C20.8 6.52855 20.8 8.862 20.8 13.5289C20.8 18.1958 20.8 20.5293 19.3502 21.9791C17.9004 23.4289 15.5669 23.4289 10.9 23.4289C6.2331 23.4289 3.89964 23.4289 2.44982 21.9791C1 20.5293 1 18.1958 1 13.5289Z"/>
                             <path d="M17.6703 1.90726L20.2633 4.15452C22.0483 5.70149 22.9408 6.47497 22.9408 7.47955C22.9408 8.48414 22.0483 9.25762 20.2633 10.8046L17.6703 13.0519C16.8855 13.7321 16.493 14.0722 16.1715 13.9254C15.8499 13.7786 15.8499 13.2592 15.8499 12.2206V10.5438C13.1999 10.5438 10.3726 11.5318 8.64962 13.2434C8.12486 13.7646 7.86248 14.0252 7.72286 13.9591C7.58324 13.8929 7.61571 13.5563 7.68065 12.883C8.32892 6.1615 12.7424 4.41527 15.8499 4.41527V2.73851C15.8499 1.69987 15.8499 1.18055 16.1715 1.03373C16.493 0.886898 16.8855 1.22702 17.6703 1.90726Z"/>
                         </svg>
                     </a>
                 </div>
                 <div className="mt-10 md:mt-6">
-                    <RoadMapSwiper/>
+                    <CoursesSwiper />
                 </div>
             </div>
         </div>

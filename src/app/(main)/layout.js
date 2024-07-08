@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import MainHeader from "@/components/HomePage/MainHeader";
 import MainFooter from "@/components/HomePage/MainFooter";
 
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-        <body className="font-iranYekan min-h-screen">
+        <body className="font-iranYekan min-h-screen dark:bg-[#162F48]">
           <MainHeader />  
           {children}
           <MainFooter />

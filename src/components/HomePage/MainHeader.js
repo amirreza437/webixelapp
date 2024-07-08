@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import Drawer from 'react-modern-drawer'
 import Link from 'next/link'
 
@@ -25,9 +25,22 @@ export default function MainHeader() {
         setIsOpen((prevState) => !prevState)
     }
 
+    const [theme,setTheme] = useState('light')
+
+    useEffect(() => {
+        if ( theme === 'dark') {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    })
+
+    const handleThemeSwitch = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark')
+    }
 
     return (
-        <div className="bg-white sticky p-12 rounded-b-[240px] z-50">
+        <div className="bg-white sticky p-12 rounded-b-[240px] z-50 dark:bg-[#0E2338]">
             <div className="container mx-auto max-w-[1288px]">
                 <div className="flex justify-between items-center lg:grid lg:grid-cols-9">
                     <div className="text-center lg:col-span-2">
@@ -112,9 +125,9 @@ export default function MainHeader() {
                             </div>
                         </Drawer>
                     </div>
-                    <div className="lg:col-span-5 bg-[#ECEEEF] rounded-md z-20 hidden lg:block">
+                    <div className="lg:col-span-5 bg-[#ECEEEF] rounded-md z-20 hidden lg:block dark:bg-[#162F48]">
                         <form className="relative flex justify-center items-center w-full h-12 rounded-md z-20">
-                            <div className="grid place-items-center h-full w-12 text-gray-300 z-20">
+                            <div className="grid place-items-center h-full w-12 text-gray-300 z-20 dark:bg-[#162F48] dark:text-[#EEEEEE]">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 </svg>
@@ -122,7 +135,7 @@ export default function MainHeader() {
                             <div className={`overlay ${searchBox ? 'overlay--visible' : ''}`} onClick={overlayClickHandler}></div>
                             <input
                             onClick={searchBarClickHandler}
-                            className="bg-[#ECEEEF] peer h-full w-full outline-none text-sm text-gray-700 pr-2 rounded-md z-20"
+                            className="bg-[#ECEEEF] peer h-full w-full outline-none text-sm text-gray-700 pr-2 rounded-md z-20 dark:bg-[#162F48] dark:text-[#EEEEEE]"
                             type="text"
                             id="search"
                             placeholder="دنبال چیزی هستی؟" /> 
@@ -130,30 +143,30 @@ export default function MainHeader() {
                     </div>
                     <div className="lg:col-span-2">
                         <ul className="flex justify-end gap-x-4">
-                            <li className="rounded-full bg-[#ECEEEF] hover:bg-[#FF0060] hover:text-white p-2 hidden lg:block" id="darkMode">
+                            <li className="rounded-full bg-[#ECEEEF] hover:bg-[#FF0060] hover:text-white p-2 hidden lg:block dark:bg-[#162F48] duration-200" id="darkMode" onClick={handleThemeSwitch}>
                                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path fill="currentColor" d="M17 12a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"/>
                                     <path fill="currentColor" fillRule="evenodd" d="M12 1.25c.41 0 .75.34.75.75v2a.75.75 0 0 1-1.5 0V2c0-.41.34-.75.75-.75ZM1.25 12c0-.41.34-.75.75-.75h2a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1-.75-.75Zm18 0c0-.41.34-.75.75-.75h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75ZM12 19.25c.41 0 .75.34.75.75v2a.75.75 0 0 1-1.5 0v-2c0-.41.34-.75.75-.75Z" clipRule="evenodd"/>
                                     <path fill="currentColor" d="M3.67 3.72a.75.75 0 0 1 1.06-.05L6.95 5.7a.75.75 0 0 1-1.01 1.1L3.72 4.79a.75.75 0 0 1-.05-1.06ZM20.33 3.72c.28.3.26.78-.05 1.06L18.06 6.8a.75.75 0 1 1-1.01-1.11l2.22-2.03a.75.75 0 0 1 1.06.05ZM17.03 17.02c.29-.29.76-.29 1.06 0l2.22 2.23a.75.75 0 1 1-1.06 1.06l-2.22-2.22a.75.75 0 0 1 0-1.07ZM6.98 17.02c.29.3.29.77 0 1.07L4.75 20.3a.75.75 0 0 1-1.06-1.06l2.22-2.23c.3-.29.77-.29 1.07 0Z"/>
                                 </svg>
                             </li>
-                            <li className="rounded-full bg-[#ECEEEF] hover:bg-[#FF0060] hover:text-white p-2 hidden lg:block">
+                            <Link href='/user-panel/notifications' className="rounded-full bg-[#ECEEEF] hover:bg-[#FF0060] hover:text-white p-2 hidden lg:block dark:bg-[#162F48] duration-200">
                                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="notification">
                                     <path fill="currentColor" d="M18.75 9v.7c0 .85.24 1.68.7 2.38l1.1 1.72a2.8 2.8 0 0 1-1.52 4.21 25.8 25.8 0 0 1-14.06 0 2.8 2.8 0 0 1-1.52-4.2l1.1-1.73c.46-.7.7-1.53.7-2.38V9c0-3.87 3.02-7 6.75-7a6.88 6.88 0 0 1 6.75 7Z" opacity=".5"/>
                                     <path fill="currentColor" d="M7.24 18.55a5 5 0 0 0 9.52 0c-3.15.59-6.37.59-9.52 0Z"/>
                                 </svg>
-                            </li>
-                            <li className="rounded-full bg-[#ECEEEF] hover:bg-[#FF0060] hover:text-white p-2" id="profile">
+                            </Link>
+                            <Link href="/user-panel" className="rounded-full bg-[#ECEEEF] hover:bg-[#FF0060] hover:text-white p-2 dark:bg-[#162F48] duration-200" id="profile">
                                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <circle cx="12" cy="6" r="4" fill="currentColor"/>
                                     <path fill="currentColor" d="M20 17.5c0 2.49 0 4.5-8 4.5s-8-2.01-8-4.5S7.58 13 12 13s8 2.01 8 4.5Z" opacity=".5"/>
                                 </svg>
-                            </li>
+                            </Link>
                         </ul>
                     </div>
                 </div>
             </div>
-            <ul className="hidden lg:flex justify-center gap-x-5 text-[#393646] mt-4 translate-y-4">
+            <ul className="hidden lg:flex justify-center gap-x-5 text-[#393646] mt-4 translate-y-4 dark:text-[#EEEEEE]">
                 <li className="hover:text-[#FF0060] font-medium"><Link href="/">خانه</Link></li>
                 <li className="hover:text-[#FF0060] font-medium"><Link href="/articles">مقالات</Link></li>
                 <li className="hover:text-[#FF0060] font-medium"><Link href="/courses">دوره های آموزشی</Link></li>

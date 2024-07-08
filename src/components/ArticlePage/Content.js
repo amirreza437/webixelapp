@@ -6,32 +6,32 @@ import a from '@/assets/images/a.png'
 export default function Content() {
     return (
         <div className="space-y-10">
-            <div className="bg-white rounded-xl p-4 min-[400px]:p-8 space-y-5">
+            <div className="bg-white rounded-xl p-4 min-[400px]:p-8 space-y-5 dark:bg-[#0E2338]">
                 <div className="grid grid-cols-1 gap-y-2 md:gap-y-0 place-items-center md:flex justify-between items-center">
                     <div className="grid grid-cols-1 gap-y-2 md:gap-y-0 md:flex gap-x-2 md:gap-x-4">
-                        <p className="font-black text-lg">اسم نویسنده</p>
+                        <p className="font-black text-lg dark:text-[#EEEEEE]">اسم نویسنده</p>
                         <span className="hidden md:block">|</span>
-                        <p className="font-light text-base">تاریخ انتشار مقاله</p>
+                        <p className="font-light text-base dark:text-[#EEEEEE]">تاریخ انتشار مقاله</p>
                     </div>
                     <div className="flex justify-between items-center gap-x-2">
-                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200">
+                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200 dark:bg-[#0079FF]">
                             <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z"/>
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/>
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.64 7h0"/>
                             </svg>
                         </a>
-                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200">
+                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200 dark:bg-[#0079FF]">
                             <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
                                 <path stroke="currentColor" strokeWidth="2" d="M29.92 6.16 25.69 26.1c-.31 1.4-1.15 1.75-2.33 1.1l-6.43-4.75-3.11 2.99c-.34.34-.63.63-1.3.63L13 19.5 24.92 8.72c.52-.46-.11-.72-.8-.26l-14.76 9.3-6.35-2c-1.38-.43-1.4-1.38.3-2.04l24.83-9.57c1.15-.43 2.15.26 1.78 2.01z"/>
                             </svg>
                         </a>
-                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200">
+                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200 dark:bg-[#0079FF]">
                             <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" data-name="Layer 2" viewBox="0 0 48 48">
                                 <path stroke="currentColor" strokeWidth="3" d="M38.74 16.55v1c0 10.07-7.64 21.61-21.62 21.61A21.14 21.14 0 0 1 5.5 35.71a12.22 12.22 0 0 0 1.81.11 15.25 15.25 0 0 0 9.44-3.24 7.56 7.56 0 0 1-7.1-5.29 6.9 6.9 0 0 0 1.44.15 7.53 7.53 0 0 0 2-.27A7.57 7.57 0 0 1 7 19.72v-.1a7.42 7.42 0 0 0 3.44.94A7.54 7.54 0 0 1 8.05 10.5a21.58 21.58 0 0 0 15.68 7.94 6.38 6.38 0 0 1-.21-1.74 7.55 7.55 0 0 1 13.17-5.31 15.59 15.59 0 0 0 4.83-1.85 7.65 7.65 0 0 1-3.39 4.27 15.87 15.87 0 0 0 4.37-1.26 15.56 15.56 0 0 1-3.76 4Z"/>
                             </svg>
                         </a>
-                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200">
+                        <a className="bg-[#393646] rounded-full p-[6px] hover:bg-[#FF0060] duration-200 dark:bg-[#0079FF]">
                             <svg className="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" fill="currentColor" strokeWidth="0.1" fill-rule="evenodd" d="M6 2a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4H6ZM4 6c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Zm5 5a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0v-6Zm.5-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM12 10a1 1 0 0 1 .82.43A3.51 3.51 0 0 1 14.5 10c2.16 0 3.5 1.93 3.5 3.57V17a1 1 0 1 1-2 0V13.57c0-.78-.66-1.58-1.5-1.58-.52 0-1.1.28-1.5.96V17a1 1 0 1 1-2 0V11a1 1 0 0 1 1-1Z" clip-rule="evenodd"/>
                             </svg>
@@ -42,7 +42,7 @@ export default function Content() {
                     <Image src={a} className="w-full h-full rounded-md" />
                 </div>
                 <div className="grid grid-cols-1 place-items-center gap-y-2 min-[450px]:flex justify-between items-center">
-                    <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-base rounded gap-x-2 p-2 hover:bg-[#FF0060] hover:text-white duration-200">برچسب مقاله
+                    <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-base rounded gap-x-2 p-2 hover:bg-[#FF0060] hover:text-white duration-200 dark:bg-[#FF0060] dark:text-[#EEEEEE] dark:hover:bg-[#0079FF]">برچسب مقاله
                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path fill="currentColor" fill-rule="evenodd" d="M11.24 2.8c-.62.08-1.37.25-2.45.5l-1.23.29c-.91.2-1.54.35-2.02.52-.46.16-.72.31-.92.51-.2.2-.35.46-.51.92-.17.48-.31 1.1-.52 2.02L3.3 8.79a28.9 28.9 0 0 0-.5 2.45c-.08.6-.06 1 .04 1.37.1.37.3.72.7 1.19.39.47.94 1.02 1.72 1.8l1.83 1.84a36.3 36.3 0 0 0 3.16 2.96c.81.62 1.4.85 2.01.85.6 0 1.2-.23 2.02-.85.83-.64 1.8-1.6 3.16-2.96a36.3 36.3 0 0 0 2.96-3.16c.62-.82.85-1.41.85-2.02 0-.6-.23-1.2-.85-2.01a36.3 36.3 0 0 0-2.96-3.16L15.6 5.26a28.9 28.9 0 0 0-1.81-1.73 3.25 3.25 0 0 0-1.2-.69c-.36-.1-.76-.12-1.36-.04Zm-.2-1.49c.72-.1 1.35-.09 1.98.1.64.17 1.17.5 1.73.97.54.44 1.14 1.04 1.9 1.8l1.89 1.89c1.3 1.3 2.35 2.35 3.05 3.27a4.74 4.74 0 0 1 1.16 2.92c0 1.07-.44 1.98-1.16 2.93-.7.92-1.74 1.96-3.05 3.27l-.08.08c-1.31 1.3-2.35 2.35-3.27 3.05a4.74 4.74 0 0 1-2.93 1.16 4.74 4.74 0 0 1-2.92-1.16c-.92-.7-1.96-1.74-3.27-3.05l-1.9-1.9a29.52 29.52 0 0 1-1.8-1.89c-.46-.56-.79-1.1-.97-1.73a4.73 4.73 0 0 1-.09-1.98c.1-.7.28-1.52.52-2.55l.3-1.3c.2-.87.37-1.57.56-2.14.2-.58.45-1.07.87-1.5.42-.4.9-.66 1.5-.86.56-.2 1.26-.36 2.12-.56l1.3-.3c1.04-.24 1.87-.43 2.56-.52ZM9.5 8a1.25 1.25 0 1 0-1.77 1.76A1.25 1.25 0 0 0 9.5 8ZM6.66 6.93a2.75 2.75 0 1 1 3.9 3.9 2.75 2.75 0 0 1-3.9-3.9ZM19.06 11c.28.3.28.77 0 1.06l-6.99 6.98a.75.75 0 0 1-1.06-1.06L18 10.99c.3-.3.77-.3 1.06 0Z" clip-rule="evenodd"/>
                         </svg> 
@@ -55,7 +55,7 @@ export default function Content() {
                     </div>
                 </div>
                 <div className="text-[#393646]">
-                    <h1 className="font-black text-4xl">اسم مقاله</h1>
+                    <h1 className="font-black text-4xl dark:text-[#EEEEEE]">اسم مقاله</h1>
                 </div>
                 <div className="font-light text-xl break-words leading-10">
                     <p>جاوا اسکریپت یک زبان اسکریپت‌­نویسی (یا برنامه­‌نویسی) است که برای افزودن ویژگی­‌های پیچیده (مانند انیمیشن­‌های 2 و 3 بعدی، نقشه­‌های واکنش­‌گرا و...) به وب­‌سایت از آن استفاده می­‌شود. برنامه‌­نویسان جاوا اسکریپت به منظور کدنویسی کم­‌تر و رسیدن به نتیجه مورد نظر در کوتاه‌­ترین زمان، از فریم‌­ورک‌­های این زبان مانند Vue ، React،  Angular و... استفاده می­‌کنند. هر کدام از این فریم‌­ورک­‌ها شامل کتابخانه­‌های کوچک و بزرگ به همراه قواعد و دستورات خاص خود هستند و برنامه‌­نویسان برای انتخاب هر کدام از آن‌ها دلایل خود را دارند. شما نیز اگر در انتخاب کتابخانه­‌های جاوا اسکریپت برای یادگیری مردد هستید، ابتدا باید ویژگی­‌های هر کدام را به خوبی بشناسید. در مطالب قبلی درباره فریم‌ورک React Native صحبت کرده‌ایم و در ادامه این مقاله با فریم‌ورک در حال رشد و محبوب Vue.JS آشنا خواهیم شد.</p>
@@ -81,27 +81,27 @@ export default function Content() {
                     </div>
                     <div className="flex flex-wrap gap-y-2 min-[300px]:justify-normal gap-x-2">
                         <div className="flex">
-                            <a className="group bg-[#ECEEEF] flex flex-row-reverse items-center hover:bg-[#FF0060] hover:text-white rounded p-1" href="#">
+                            <a className="group bg-[#ECEEEF] flex flex-row-reverse items-center hover:bg-[#FF0060] hover:text-white rounded p-1 dark:bg-[#162F48] duration-200" href="#">
                                 <p className="text-sm">tailwind</p>
-                                <svg className="w-3 h-3 fill-current text-[#393646] hover:bg-[#FF0060] group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <svg className="w-3 h-3 fill-current text-[#393646] hover:bg-[#FF0060] group-hover:text-white dark:text-[#EEEEEE]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 3 5 21M19 3l-5 18"/>
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 9H4M20 16H2" opacity="1"/>
                                 </svg>
                             </a>
                         </div>
                         <div className="flex">
-                            <a className="group bg-[#ECEEEF] flex flex-row-reverse items-center hover:bg-[#FF0060] hover:text-white rounded p-1" href="#">
+                            <a className="group bg-[#ECEEEF] flex flex-row-reverse items-center hover:bg-[#FF0060] hover:text-white rounded p-1 dark:bg-[#162F48] duration-200" href="#">
                                 <p className="text-sm">جاوا_اسکریپت</p>
-                                <svg className="w-3 h-3 fill-current text-[#393646] hover:bg-[#FF0060] group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <svg className="w-3 h-3 fill-current text-[#393646] hover:bg-[#FF0060] group-hover:text-white dark:text-[#EEEEEE]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 3 5 21M19 3l-5 18"/>
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 9H4M20 16H2" opacity="1"/>
                                 </svg>
                             </a>
                         </div>
                         <div className="flex">
-                            <a className="group bg-[#ECEEEF] flex flex-row-reverse items-center hover:bg-[#FF0060] hover:text-white rounded p-1" href="#">
+                            <a className="group bg-[#ECEEEF] flex flex-row-reverse items-center hover:bg-[#FF0060] hover:text-white rounded p-1 dark:bg-[#162F48] duration-200" href="#">
                                 <p className="text-sm">وب</p>
-                                <svg className="w-3 h-3 fill-current text-[#393646] hover:bg-[#FF0060] group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <svg className="w-3 h-3 fill-current text-[#393646] hover:bg-[#FF0060] group-hover:text-white dark:text-[#EEEEEE]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 3 5 21M19 3l-5 18"/>
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 9H4M20 16H2" opacity="1"/>
                                 </svg>
@@ -109,28 +109,26 @@ export default function Content() {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 place-items-center gap-y-7 min-[600px]:flex justify-between items-center bg-[#F3F4F6] text-[#393646] font-bold text-sm rounded-md p-3">
-                    <p>به این مقاله چه امتیازی میدی؟</p>
-                    <p>ثبت رای</p>
+                <div className="grid grid-cols-1 place-items-center gap-y-7 min-[600px]:flex justify-between items-center bg-[#F3F4F6] text-[#393646] font-bold text-sm rounded-md p-3 dark:bg-[#162F48]">
+                    <p className="dark:text-[#EEEEEE]">به این مقاله چه امتیازی میدی؟</p>
+                    <p className="dark:text-[#EEEEEE]">ثبت رای</p>
                 </div>
             </div>
             <div className="space-y-5">
                 <p className="font-black text-2xl">مقالات مشابه</p>
                 <div className="grid grid-cols-1 gap-y-5 gap-x-5 sm:grid-cols-3">
-                    <div className="bg-white grid rounded-lg gap-y-4 p-4">
-                        <a href="/articles/article">
-                            <Image className="rounded-md" src={a} alt="pic"/>
-                        </a>
-                        <h4 className="text-center sm:max-[830px]:text-center min-[280px]:text-right font-black text-lg text-[#393646]">اسم مقاله</h4>
-                        <div className="grid grid-cols-1 gap-y-2 place-items-center sm:max-[830px]:grid sm:max-[830px]:grid-cols-1 min-[280px]:flex min-[280px]:justify-between items-center">
+                    <div className="bg-white grid rounded-lg gap-y-4 p-4 dark:bg-[#0E2338]">
+                        <Image className="rounded-md" src={a} alt="pic"/>
+                        <h4 className="text-center min-[280px]:text-right font-black text-lg text-[#393646] dark:text-[#EEEEEE]">اسم مقاله</h4>
+                        <div className="grid grid-cols-1 gap-y-2 place-items-center min-[280px]:flex min-[280px]:justify-between items-center">
                             <b className="text-xs">اسم نویسنده</b>
-                            <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-xs rounded gap-x-2 p-1 hover:bg-[#FF0060] hover:text-white duration-200">برچسب مقاله
+                            <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-xs rounded gap-x-2 p-1 hover:bg-[#FF0060] hover:text-white duration-200 dark:bg-[#FF0060] dark:text-[#EEEEEE] dark:hover:bg-[#0079FF]">برچسب مقاله
                                 <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path fill="currentColor" fill-rule="evenodd" d="M11.24 2.8c-.62.08-1.37.25-2.45.5l-1.23.29c-.91.2-1.54.35-2.02.52-.46.16-.72.31-.92.51-.2.2-.35.46-.51.92-.17.48-.31 1.1-.52 2.02L3.3 8.79a28.9 28.9 0 0 0-.5 2.45c-.08.6-.06 1 .04 1.37.1.37.3.72.7 1.19.39.47.94 1.02 1.72 1.8l1.83 1.84a36.3 36.3 0 0 0 3.16 2.96c.81.62 1.4.85 2.01.85.6 0 1.2-.23 2.02-.85.83-.64 1.8-1.6 3.16-2.96a36.3 36.3 0 0 0 2.96-3.16c.62-.82.85-1.41.85-2.02 0-.6-.23-1.2-.85-2.01a36.3 36.3 0 0 0-2.96-3.16L15.6 5.26a28.9 28.9 0 0 0-1.81-1.73 3.25 3.25 0 0 0-1.2-.69c-.36-.1-.76-.12-1.36-.04Zm-.2-1.49c.72-.1 1.35-.09 1.98.1.64.17 1.17.5 1.73.97.54.44 1.14 1.04 1.9 1.8l1.89 1.89c1.3 1.3 2.35 2.35 3.05 3.27a4.74 4.74 0 0 1 1.16 2.92c0 1.07-.44 1.98-1.16 2.93-.7.92-1.74 1.96-3.05 3.27l-.08.08c-1.31 1.3-2.35 2.35-3.27 3.05a4.74 4.74 0 0 1-2.93 1.16 4.74 4.74 0 0 1-2.92-1.16c-.92-.7-1.96-1.74-3.27-3.05l-1.9-1.9a29.52 29.52 0 0 1-1.8-1.89c-.46-.56-.79-1.1-.97-1.73a4.73 4.73 0 0 1-.09-1.98c.1-.7.28-1.52.52-2.55l.3-1.3c.2-.87.37-1.57.56-2.14.2-.58.45-1.07.87-1.5.42-.4.9-.66 1.5-.86.56-.2 1.26-.36 2.12-.56l1.3-.3c1.04-.24 1.87-.43 2.56-.52ZM9.5 8a1.25 1.25 0 1 0-1.77 1.76A1.25 1.25 0 0 0 9.5 8ZM6.66 6.93a2.75 2.75 0 1 1 3.9 3.9 2.75 2.75 0 0 1-3.9-3.9ZM19.06 11c.28.3.28.77 0 1.06l-6.99 6.98a.75.75 0 0 1-1.06-1.06L18 10.99c.3-.3.77-.3 1.06 0Z" clip-rule="evenodd"/>
                                 </svg> 
                             </a>
                         </div>
-                        <div className="grid grid-cols-1 sm:max-[830px]:grid sm:max-[830px]:grid-cols-1 place-items-center gap-y-2 min-[325px]:flex justify-between items-center">
+                        <div className="grid grid-cols-1 place-items-center gap-y-2 min-[325px]:flex justify-between items-center">
                             <div className="flex justify-start items-center gap-x-2">
                                 <a href="#" className="bg-gray-400 bg-opacity-20 flex items-center text-gray-500 gap-x-1 px-1 rounded">0
                                     <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -157,20 +155,18 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white grid rounded-lg gap-y-4 p-4">
-                        <a href="/articles/article">
-                            <Image className="rounded-md" src={a} alt="pic"/>
-                        </a>
-                        <h4 className="text-center sm:max-[830px]:text-center min-[280px]:text-right font-black text-lg text-[#393646]">اسم مقاله</h4>
-                        <div className="grid grid-cols-1 gap-y-2 place-items-center sm:max-[830px]:grid sm:max-[830px]:grid-cols-1 min-[280px]:flex min-[280px]:justify-between items-center">
+                    <div className="bg-white grid rounded-lg gap-y-4 p-4 dark:bg-[#0E2338]">
+                        <Image className="rounded-md" src={a} alt="pic"/>
+                        <h4 className="text-center min-[280px]:text-right font-black text-lg text-[#393646] dark:text-[#EEEEEE]">اسم مقاله</h4>
+                        <div className="grid grid-cols-1 gap-y-2 place-items-center min-[280px]:flex min-[280px]:justify-between items-center">
                             <b className="text-xs">اسم نویسنده</b>
-                            <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-xs rounded gap-x-2 p-1 hover:bg-[#FF0060] hover:text-white duration-200">برچسب مقاله
+                            <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-xs rounded gap-x-2 p-1 hover:bg-[#FF0060] hover:text-white duration-200 dark:bg-[#FF0060] dark:text-[#EEEEEE] dark:hover:bg-[#0079FF]">برچسب مقاله
                                 <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path fill="currentColor" fill-rule="evenodd" d="M11.24 2.8c-.62.08-1.37.25-2.45.5l-1.23.29c-.91.2-1.54.35-2.02.52-.46.16-.72.31-.92.51-.2.2-.35.46-.51.92-.17.48-.31 1.1-.52 2.02L3.3 8.79a28.9 28.9 0 0 0-.5 2.45c-.08.6-.06 1 .04 1.37.1.37.3.72.7 1.19.39.47.94 1.02 1.72 1.8l1.83 1.84a36.3 36.3 0 0 0 3.16 2.96c.81.62 1.4.85 2.01.85.6 0 1.2-.23 2.02-.85.83-.64 1.8-1.6 3.16-2.96a36.3 36.3 0 0 0 2.96-3.16c.62-.82.85-1.41.85-2.02 0-.6-.23-1.2-.85-2.01a36.3 36.3 0 0 0-2.96-3.16L15.6 5.26a28.9 28.9 0 0 0-1.81-1.73 3.25 3.25 0 0 0-1.2-.69c-.36-.1-.76-.12-1.36-.04Zm-.2-1.49c.72-.1 1.35-.09 1.98.1.64.17 1.17.5 1.73.97.54.44 1.14 1.04 1.9 1.8l1.89 1.89c1.3 1.3 2.35 2.35 3.05 3.27a4.74 4.74 0 0 1 1.16 2.92c0 1.07-.44 1.98-1.16 2.93-.7.92-1.74 1.96-3.05 3.27l-.08.08c-1.31 1.3-2.35 2.35-3.27 3.05a4.74 4.74 0 0 1-2.93 1.16 4.74 4.74 0 0 1-2.92-1.16c-.92-.7-1.96-1.74-3.27-3.05l-1.9-1.9a29.52 29.52 0 0 1-1.8-1.89c-.46-.56-.79-1.1-.97-1.73a4.73 4.73 0 0 1-.09-1.98c.1-.7.28-1.52.52-2.55l.3-1.3c.2-.87.37-1.57.56-2.14.2-.58.45-1.07.87-1.5.42-.4.9-.66 1.5-.86.56-.2 1.26-.36 2.12-.56l1.3-.3c1.04-.24 1.87-.43 2.56-.52ZM9.5 8a1.25 1.25 0 1 0-1.77 1.76A1.25 1.25 0 0 0 9.5 8ZM6.66 6.93a2.75 2.75 0 1 1 3.9 3.9 2.75 2.75 0 0 1-3.9-3.9ZM19.06 11c.28.3.28.77 0 1.06l-6.99 6.98a.75.75 0 0 1-1.06-1.06L18 10.99c.3-.3.77-.3 1.06 0Z" clip-rule="evenodd"/>
                                 </svg> 
                             </a>
                         </div>
-                        <div className="grid grid-cols-1 sm:max-[830px]:grid sm:max-[830px]:grid-cols-1 place-items-center gap-y-2 min-[325px]:flex justify-between items-center">
+                        <div className="grid grid-cols-1 place-items-center gap-y-2 min-[325px]:flex justify-between items-center">
                             <div className="flex justify-start items-center gap-x-2">
                                 <a href="#" className="bg-gray-400 bg-opacity-20 flex items-center text-gray-500 gap-x-1 px-1 rounded">0
                                     <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -197,20 +193,18 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white grid rounded-lg gap-y-4 p-4">
-                        <a href="/articles/article">
-                            <Image className="rounded-md" src={a} alt="pic"/>
-                        </a>
-                        <h4 className="text-center sm:max-[830px]:text-center min-[280px]:text-right font-black text-lg text-[#393646]">اسم مقاله</h4>
-                        <div className="grid grid-cols-1 gap-y-2 place-items-center sm:max-[830px]:grid sm:max-[830px]:grid-cols-1 min-[280px]:flex min-[280px]:justify-between items-center">
+                    <div className="bg-white grid rounded-lg gap-y-4 p-4 dark:bg-[#0E2338]">
+                        <Image className="rounded-md" src={a} alt="pic"/>
+                        <h4 className="text-center min-[280px]:text-right font-black text-lg text-[#393646] dark:text-[#EEEEEE]">اسم مقاله</h4>
+                        <div className="grid grid-cols-1 gap-y-2 place-items-center min-[280px]:flex min-[280px]:justify-between items-center">
                             <b className="text-xs">اسم نویسنده</b>
-                            <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-xs rounded gap-x-2 p-1 hover:bg-[#FF0060] hover:text-white duration-200">برچسب مقاله
+                            <a href="#" className="bg-[#FFE3E7] flex text-[#FF0060] text-xs rounded gap-x-2 p-1 hover:bg-[#FF0060] hover:text-white duration-200 dark:bg-[#FF0060] dark:text-[#EEEEEE] dark:hover:bg-[#0079FF]">برچسب مقاله
                                 <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path fill="currentColor" fill-rule="evenodd" d="M11.24 2.8c-.62.08-1.37.25-2.45.5l-1.23.29c-.91.2-1.54.35-2.02.52-.46.16-.72.31-.92.51-.2.2-.35.46-.51.92-.17.48-.31 1.1-.52 2.02L3.3 8.79a28.9 28.9 0 0 0-.5 2.45c-.08.6-.06 1 .04 1.37.1.37.3.72.7 1.19.39.47.94 1.02 1.72 1.8l1.83 1.84a36.3 36.3 0 0 0 3.16 2.96c.81.62 1.4.85 2.01.85.6 0 1.2-.23 2.02-.85.83-.64 1.8-1.6 3.16-2.96a36.3 36.3 0 0 0 2.96-3.16c.62-.82.85-1.41.85-2.02 0-.6-.23-1.2-.85-2.01a36.3 36.3 0 0 0-2.96-3.16L15.6 5.26a28.9 28.9 0 0 0-1.81-1.73 3.25 3.25 0 0 0-1.2-.69c-.36-.1-.76-.12-1.36-.04Zm-.2-1.49c.72-.1 1.35-.09 1.98.1.64.17 1.17.5 1.73.97.54.44 1.14 1.04 1.9 1.8l1.89 1.89c1.3 1.3 2.35 2.35 3.05 3.27a4.74 4.74 0 0 1 1.16 2.92c0 1.07-.44 1.98-1.16 2.93-.7.92-1.74 1.96-3.05 3.27l-.08.08c-1.31 1.3-2.35 2.35-3.27 3.05a4.74 4.74 0 0 1-2.93 1.16 4.74 4.74 0 0 1-2.92-1.16c-.92-.7-1.96-1.74-3.27-3.05l-1.9-1.9a29.52 29.52 0 0 1-1.8-1.89c-.46-.56-.79-1.1-.97-1.73a4.73 4.73 0 0 1-.09-1.98c.1-.7.28-1.52.52-2.55l.3-1.3c.2-.87.37-1.57.56-2.14.2-.58.45-1.07.87-1.5.42-.4.9-.66 1.5-.86.56-.2 1.26-.36 2.12-.56l1.3-.3c1.04-.24 1.87-.43 2.56-.52ZM9.5 8a1.25 1.25 0 1 0-1.77 1.76A1.25 1.25 0 0 0 9.5 8ZM6.66 6.93a2.75 2.75 0 1 1 3.9 3.9 2.75 2.75 0 0 1-3.9-3.9ZM19.06 11c.28.3.28.77 0 1.06l-6.99 6.98a.75.75 0 0 1-1.06-1.06L18 10.99c.3-.3.77-.3 1.06 0Z" clip-rule="evenodd"/>
                                 </svg> 
                             </a>
                         </div>
-                        <div className="grid grid-cols-1 sm:max-[830px]:grid sm:max-[830px]:grid-cols-1 place-items-center gap-y-2 min-[325px]:flex justify-between items-center">
+                        <div className="grid grid-cols-1 place-items-center gap-y-2 min-[325px]:flex justify-between items-center">
                             <div className="flex justify-start items-center gap-x-2">
                                 <a href="#" className="bg-gray-400 bg-opacity-20 flex items-center text-gray-500 gap-x-1 px-1 rounded">0
                                     <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
