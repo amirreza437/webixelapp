@@ -1,10 +1,11 @@
-import CoursesSwiper from "./CoursesSwiper";
+import CustomSlider from "./CustomSlider";
+
 
 
 
 export default function CoursesGrid() {
     return (
-        <div className="">
+        <div>
             <div className="mx-auto max-w-[1288px] p-10 rounded-[100px] mt-10">
                 <div className="grid grid-cols-1 place-items-center min-[700px]:flex justify-between items-center">
                     <div className="flex justify-center items-center gap-x-1 min-[700px]:gap-x-4">
@@ -23,7 +24,7 @@ export default function CoursesGrid() {
                     </a>
                 </div>
                 <div className="mt-10 md:mt-6">
-                    <CoursesSwiper />
+                    <CustomSlider />
                 </div>
             </div>
         </div>

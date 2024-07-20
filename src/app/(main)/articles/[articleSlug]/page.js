@@ -7,7 +7,6 @@ import StickySideBar from "@/components/ArticlePage/StickySideBar";
 
 
 
-
 export default function ArticlePage() {
     return (
         <div className="container mx-auto max-w-[1288px] p-8">

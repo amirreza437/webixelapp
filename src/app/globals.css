@@ -175,5 +175,27 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+
 /* #0E2338 */
 /* #162F48 */
+
+
+
+.commentOpen {
+	display: block;
+}
+
+.commentClose {
+	display: hidden;
+}
+
+.commetnBtnOpen {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	column-gap: 1rem;
+}
+
+.commentBtnClose {
+	display: hidden;
+}
